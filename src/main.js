@@ -1,5 +1,5 @@
 // import "./style.css";
-import products from "../productsApi/products.json";
+// import products from "../productsApi/products.json";
 import { showProductsCard } from "./productsCard.js";
 import { displayTotalCardProducts } from "./updateCard.js";
 
@@ -19,11 +19,10 @@ crose.addEventListener("click", (e) => {
 });
 
 // show products----------------------------------
-try {
-  showProductsCard(products);
-} catch (error) {
-  console.log("Internal server error!");
-}
+fetch("../productsApi/products.json")
+  .then((response) => response.json())
+  .then((data) => showProductsCard(data))
+  .catch((error) => console.error("Error loading JSON:", error));
 
 // display total card products--------------------
 displayTotalCardProducts();
