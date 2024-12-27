@@ -39,7 +39,7 @@ export function showAddToCardProducts(cardProducts) {
 
       // show all data
       productCardClone.querySelector(".tag").textContent = category;
-      productCardClone.querySelector(".productImg").src = img;
+      productCardClone.querySelector(".productImg").src = currProductImg;
       productCardClone.querySelector(".productName").textContent = productName;
       productCardClone.querySelector(
         ".currMoney"
