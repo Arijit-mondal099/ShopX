@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../public/fav.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Us</title>
+
+    <style>
+        .formContainer {
+            width: 50%;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            box-shadow: 1px 1px 35px #dfdede;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .formText {
+            font-size: 0.8rem;
+        }
+
+        .name {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .inputName {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .inputName input {
+            width: 50%;
+        }
+
+        .inputData {
+            border-radius: 0.5rem;
+            box-shadow: 1px 1px 35px #dfdede;
+            padding: 0.8rem 0.5rem;
+            border: 0;
+            outline: 0;
+        }
+
+        .inputBox {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            width: 100%;
+        }
+
+        .formContainer > a {
+            background-color: #282828;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            color: #FFF;
+            font-size: 0.8rem;
+            border-radius: 10rem;
+            box-shadow: 1px 1px 35px #dfdede;
+        }
+
+        @media screen and (max-width: 800px) {
+            .formContainer {
+                width: 100%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- header start -->
+    <header class="header">
+        <!-- search bar start  -->
+        <nav class="info">
+            <a href="/" class="logo">
+                <h1>ShopX.in</h1>
+            </a>
+
+            <!-- hambar start-->
+            <img src="../public/ham.svg" alt="imgs" class="hambar">
+            <div class="hamSectionContainer">
+                <img src="../public/crose.svg" alt="imgs" class="crose">
+                <div class="hamlinks">
+                    <a href="/">HOME</a>
+                    <a href="./about.html">ABOUT</a>
+                    <a href="./products.html">PRODUCTS</a>
+                    <a href="./contact.html">CONTACT</a>
+                </div>
+            </div>
+            <!-- hambar end-->
+
+            <!-- nav bar start  -->
+            <div class="links">
+                <a href="/">HOME</a>
+                <a href="./about.html">ABOUT</a>
+                <a href="./products.html">PRODUCTS</a>
+                <a href="./contact.html">CONTACT</a>
+            </div>
+            <!-- nav bar end  -->
+        </nav>
+        <!-- search bar end  -->
+    </header>
+    <!-- header end  -->
+
+    <!-- main section start  -->
+    <main class="main" style="margin: 7rem auto 1rem auto; width: 90%;">
+
+        <div class="formContainer">
+            <h2>Contact Us</h2>
+            <form class="form">
+                <div class="name">
+                    <p class="formText">ENTER YOUR NAME:</p>
+                    <div class="inputName">
+                        <input type="text" placeholder="First Name" class="inputData">
+                        <input type="text" placeholder="Last Name" class="inputData">
+                    </div>
+                </div>
+
+                <div class="inputBox">
+                    <p class="formText">ENTER YOUR EMAILL ADDRESS:</p>
+                    <input type="email" placeholder="Enter Your Email" class="inputData">
+                </div>
+
+                <div class="inputBox">
+                    <p class="formText">ENTER YOUR PHONE NUMBER:</p>
+                    <input type="tel" placeholder="Enter Your Phone Number" class="inputData">
+                </div>
+
+                <div class="inputBox">
+                    <p class="formText">LEAVE MASSAGE:</p>
+                    <textarea name="text" id="text" rows="10" class="inputData"
+                        placeholder="Leave massage here"></textarea>
+                </div>
+            </form>
+            <a href="/">SUBMIT</a>
+        </div>
+
+    </main>
+    <!-- main section end  -->
+
+    <!-- footer start  -->
+    <footer class="footer">
+        <div class="footer-box">
+            <div class="footerInfo">
+                <h1>ShopX.in</h1>
+                <p>Wellcome to ShopX.in, Discover, compare, and shop the best deals effortlessly with our user-friendly
+                    app.
+                    Your one-stop destination for convenient online shopping!</p>
+
+                <div class="shoalLinks">
+                    <a href="/">
+                        <img src="../public/insta.svg" alt="imgs">
+                    </a>
+                    <a href="/">
+                        <img src="../public/x.svg" alt="imgs">
+                    </a>
+                    <a href="/">
+                        <img src="../public/linkedin.svg" alt="imgs">
+                    </a>
+                </div>
+            </div>
+
+            <div class="footerLinks">
+                <div class="footerLink">
+                    <h3>Quick Links</h3>
+                    <a href="/">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="products.html">Products</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+
+                <div class="footerLink">
+                    <h3>Support</h3>
+                    <a href="/">FAQ</a>
+                    <a href="/">Help Desk</a>
+                    <a href="/">Forums</a>
+                    <a href="/">Log In</a>
+                </div>
+
+                <div class="footerLink">
+                    <h3>Legal</h3>
+                    <a href="/">Terms & Conditions</a>
+                    <a href="/">Privacy Policy</a>
+                    <a href="/">Return Policy</a>
+                    <a href="/">Refund Policy</a>
+                </div>
+            </div>
+        </div>
+
+        <p class="add">Created By @rijit Mondal</p>
+    </footer>
+    <!-- footer end  -->
+
+    <script type="module" src="showAddToCard.js"></script>
+
+</body>
+
+</html>

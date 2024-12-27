@@ -1,0 +1,72 @@
+import { removeProduct } from "./removeProduct";
+import products from "../productsApi/products.json";
+import { incrimentDecrement } from "./incrimentDecrement";
+import { showAllPriceSummary } from "./showAllPriceSummary";
+
+const cardProductsContainer = document.querySelector(".cards");
+const productsCardContainer = document.querySelector(".productsCardContainer");
+
+export function showAddToCardProducts(cardProducts) {
+  cardProductsContainer.innerHTML = "";
+  if (cardProducts.length > 0) {
+    cardProducts.forEach((product) => {
+      const {
+        category,
+        currProductImg,
+        itemId,
+        productName,
+        quantity,
+        totalPrise,
+      } = product;
+      
+      // clone card from card template
+      const productCardClone = document.importNode(
+        productsCardContainer.content,
+        true
+      );
+
+      // ../public/products/mobile.png
+      const img = currProductImg.split("/public")[1];
+
+      // add unic id to all
+      productCardClone
+        .querySelector("#cardVal")
+        .setAttribute("id", `card${itemId}`);
+
+      // show all data
+      productCardClone.querySelector(".tag").textContent = category;
+      productCardClone.querySelector(".productImg").src = img;
+      productCardClone.querySelector(".productName").textContent = productName;
+      productCardClone.querySelector(
+        ".currMoney"
+      ).textContent = `₹${totalPrise.toFixed(2)}`;
+      productCardClone.querySelector(".display").textContent = quantity;
+
+      // event to remove product from card
+      productCardClone
+        .querySelector(".remove")
+        .addEventListener("click", (event) => {
+          event.preventDefault();
+          removeProduct(itemId);
+        });
+
+      // find current product stock
+      const currProduct = products.find((ele) => ele.id === itemId);
+      const stock = currProduct.stock;
+      const price = currProduct.price1;
+
+      // event to add and sub products
+      productCardClone
+        .querySelector(".box")
+        .addEventListener("click", (event) => {
+          incrimentDecrement(event, itemId, stock, price);
+        });
+
+      // show all price
+      showAllPriceSummary();
+
+      // append card into container
+      cardProductsContainer.appendChild(productCardClone);
+    });
+  }
+}

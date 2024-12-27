@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopX - Add to card page</title>
+    <link rel="shortcut icon" href="./public/fav.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./addToCard.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body style="height: 0;">
+
+    <!-- header start -->
+    <header class="header">
+        <!-- search bar start  -->
+        <nav class="info">
+            <a href="/" class="logo">
+                <h1>ShopX.in</h1>
+            </a>
+
+            <!-- hambar start-->
+            <img src="../public/ham.svg" alt="imgs" class="hambar">
+            <div class="hamSectionContainer">
+                <img src="../public/crose.svg" alt="imgs" class="crose">
+                <div class="hamlinks">
+                    <a href="/">HOME</a>
+                    <a href="./about.html">ABOUT</a>
+                    <a href="./products.html">PRODUCTS</a>
+                    <a href="./contact.html">CONTACT</a>
+                </div>
+            </div>
+            <!-- hambar end-->
+
+            <!-- nav bar start  -->
+            <div class="links">
+                <a href="/">HOME</a>
+                <a href="./about.html">ABOUT</a>
+                <a href="./products.html">PRODUCTS</a>
+                <a href="./contact.html">CONTACT</a>
+            </div>
+            <!-- nav bar end  -->
+        </nav>
+        <!-- search bar end  -->
+    </header>
+    <!-- header end  -->
+
+    <!-- main section start  -->
+    <main class="cardProductsContainer">
+        <div class="cards">
+        </div>
+
+        <div class="detailsContainer">
+            <h4>Selected Offer Summary</h4>
+            <div class="details">
+                <p>Total Item</p>
+                <h4 class="item">0</h4>
+            </div>
+            <div class="details">
+                <p>Sub Total</p>
+                <h4 class="total">₹0</h4>
+            </div>
+            <div class="tax">
+                <div class="text">
+                    <p>Tax Prise</p>
+                    <h4 class="taxval">₹0</h4>
+                </div>
+                <div class="border"></div>
+            </div>
+            <div class="details">
+                <p>Final Prise</p>
+                <h4 class="final">₹0</h4>
+            </div>
+        </div>
+    </main>
+    <!-- main section end  -->
+
+    <!-- footer start  -->
+    <footer class="footer">
+        <div class="footer-box">
+            <div class="footerInfo">
+                <h1>ShopX.in</h1>
+                <p>Wellcome to ShopX.in, Discover, compare, and shop the best deals effortlessly with our
+                    user-friendly
+                    app.
+                    Your one-stop destination for convenient online shopping!</p>
+
+                <div class="shoalLinks">
+                    <a href="/">
+                        <img src="../public/insta.svg" alt="imgs">
+                    </a>
+                    <a href="/">
+                        <img src="../public/x.svg" alt="imgs">
+                    </a>
+                    <a href="/">
+                        <img src="../public/linkedin.svg" alt="imgs">
+                    </a>
+                </div>
+            </div>
+
+            <div class="footerLinks">
+                <div class="footerLink">
+                    <h3>Quick Links</h3>
+                    <a href="/">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="products.html">Products</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+
+                <div class="footerLink">
+                    <h3>Support</h3>
+                    <a href="/">FAQ</a>
+                    <a href="/">Help Desk</a>
+                    <a href="/">Forums</a>
+                    <a href="/">Log In</a>
+                </div>
+
+                <div class="footerLink">
+                    <h3>Legal</h3>
+                    <a href="/">Terms & Conditions</a>
+                    <a href="/">Privacy Policy</a>
+                    <a href="/">Return Policy</a>
+                    <a href="/">Refund Policy</a>
+                </div>
+            </div>
+        </div>
+
+        <p class="add">Created By @rijit Mondal</p>
+    </footer>
+    <!-- footer end  -->
+
+    <!-- card template  -->
+    <template class="productsCardContainer">
+        <div class="yourCardItemsContainer" id="cardVal">
+            <a href="/" class="tag"></a>
+            <div class="productImgContainer">
+                <img src="" alt="img" class="productImg">
+            </div>
+            <h2 class="productName wid" style="font-size: 1rem;"></h2>
+            <p class="currMoney wid" style="font-size: 1rem;"></p>
+            <div class="box wid">
+                <span class="addOne">+</span>
+                <span class="display">0</span>
+                <span class="subOne">-</span>
+            </div>
+            <a href="" class="remove">
+                Remove
+            </a>
+        </div>
+    </template>
+
+    <script type="module" src="./showAddToCard.js"></script>
+
+</body>
+
+</html>
