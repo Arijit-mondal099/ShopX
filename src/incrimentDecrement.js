@@ -1,5 +1,5 @@
-import { getCardProductsDB } from "./getCardProducts";
-import { showAddToCardProducts } from "./showAddToCardProducts";
+import { getCardProductsDB } from "./getCardProducts.js";
+import { showAddToCardProducts } from "./showAddToCardProducts.js";
 
 export function incrimentDecrement(event, itemId, stock, price) {
   // fetch current card
