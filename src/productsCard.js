@@ -1,5 +1,5 @@
 import { addToCard } from "./addToCard";
-import { quantityToggle } from "./quantityToggle";
+import { quantityToggle } from "./quantityToggle.js";
 
 const itemCardsContainer = document.querySelector(".itemCardsContainer");
 const productsContainer = document.querySelector(".productsContainer");
