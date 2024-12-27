@@ -29,6 +29,7 @@ export function showAddToCardProducts(cardProducts) {
       );
 
       // ../public/products/mobile.png
+      console.log(currProductImg)
       const img = currProductImg.split("/public")[1];
 
       // add unic id to all
