@@ -1,4 +1,4 @@
-import "./style.css";
+// import "./style.css";
 import products from "../productsApi/products.json";
 import { showProductsCard } from "./productsCard.js";
 import { displayTotalCardProducts } from "./updateCard.js";
