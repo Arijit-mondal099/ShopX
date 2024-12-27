@@ -1,5 +1,8 @@
 import { removeProduct } from "./removeProduct.js";
+
+// some problem occurred (61, 62) line so we put price & quantity manually 
 // import products from "../productsApi/products.json";
+
 import { incrimentDecrement } from "./incrimentDecrement.js";
 import { showAllPriceSummary } from "./showAllPriceSummary.js";
 
