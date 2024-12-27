@@ -8,7 +8,7 @@
         "price2": 599.99,
         "stock": 50,
         "description" : "Powerfull Smartphone with Powerfull processor 4GB RAM, 64GB ROM, FHD display, battery 4000mAh, camera 12MP",
-        "imgs": "/products/mobile.png"
+        "imgs": "/public/products/mobile.png"
     },
     {
         "id": 2,
@@ -19,7 +19,7 @@
         "price2": 999.99,
         "stock": 30,
         "description": "Powerfull laptop with Intel i5 processor 16GB RAM, 512GB SSD FHD display, screen full HD 4k 15.6 inch",
-        "imgs": "/products/laptop.png"
+        "imgs": "/public/products/laptop.png"
     },
     {
         "id": 3,
@@ -30,7 +30,7 @@
         "price2": 49.99,
         "stock": 100,
         "description": "Powerfull Headphones with Bluetooth, battery Life 20 hours",
-        "imgs": "/products/headphone.png"
+        "imgs": "/public/products/headphone.png"
     },
     {
         "id": 4,
@@ -41,7 +41,7 @@
         "price2": 399.99,
         "stock": 50,
         "description" : "Light weight 35L bag, for boyes collage, traveling, charging 4000mAh battery",
-        "imgs": "/products/bag.png"
+        "imgs": "/public/products/bag.png"
     },
     {
         "id": 5,
@@ -52,7 +52,7 @@
         "price2": 399.99,
         "stock": 2,
         "description": "Powerfull Sumert Watch with Powerfull features FHD display, battery 4000mAh, camera 12MP",
-        "imgs": "/products/sumertWatch.png"
+        "imgs": "/public/products/sumertWatch.png"
     },
     {
         "id": 6,
@@ -63,7 +63,7 @@
         "price2": 149.99,
         "stock": "comming soon",
         "description": "Stylish and simple shoes with wite color and simple for men",
-        "imgs": "/products/shoes.png"
+        "imgs": "/public/products/shoes.png"
     },
     {
         "id": 7,
@@ -74,7 +74,7 @@
         "price2": 299.99,
         "stock": 30,
         "description": "Stylish t-shert with wite color and simple for men",
-        "imgs": "/products/t-shirt.png"
+        "imgs": "/public/products/t-shirt.png"
     },
     {
         "id": 8,
@@ -85,7 +85,7 @@
         "price2": 299.99,
         "stock": 30,
         "description": "Powerfull Sumert TV with Powerfull features FHD 4k 42inc display",
-        "imgs": "/products/tv.png"
+        "imgs": "/public/products/tv.png"
     },
     {
         "id": 9,
@@ -96,7 +96,7 @@
         "price2": 299.99,
         "stock": "comming soon",
         "description": "Stylish Jenkins for men with wite color and simple for men",
-        "imgs": "/products/jenkins.png"
+        "imgs": "/public/products/jenkins.png"
     },
     {
         "id": 10,
@@ -107,6 +107,6 @@
         "price2": 199.99,
         "stock": "9",
         "description": "Stylish Men's Stretch Regular Fit Jogger Denim Pants Blue and simple for men",
-        "imgs": "/products/pant.png"
+        "imgs": "/public/products/pant.png"
     }
 ]
