@@ -1,4 +1,4 @@
-import { getCardProductsDB } from "./getCardProducts";
+import { getCardProductsDB } from "./getCardProducts.js";
 
 export function displayTotalCardProducts() {
     const length = getCardProductsDB().length;
