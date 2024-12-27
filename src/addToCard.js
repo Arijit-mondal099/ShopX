@@ -1,6 +1,6 @@
-import { getCardProductsDB } from "./getCardProducts";
-import { showToast } from "./showToast";
-import { displayTotalCardProducts } from "./updateCard";
+import { getCardProductsDB } from "./getCardProducts.js";
+import { showToast } from "./showToast.js";
+import { displayTotalCardProducts } from "./updateCard.js";
 
 export function addToCard(itemId) {
   // fetch all card data from db
