@@ -1,4 +1,4 @@
-import { addToCard } from "./addToCard";
+import { addToCard } from "./addToCard.js";
 import { quantityToggle } from "./quantityToggle.js";
 
 const itemCardsContainer = document.querySelector(".itemCardsContainer");
