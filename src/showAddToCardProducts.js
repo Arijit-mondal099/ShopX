@@ -56,6 +56,7 @@ export function showAddToCardProducts(cardProducts) {
       // const price = currProduct.price1;
       
       const stock = 100;
+      const price = 100;
 
       // event to add and sub products
       productCardClone
