@@ -51,9 +51,10 @@ export function showAddToCardProducts(cardProducts) {
         });
 
       // find current product stock
-      const currProduct = products.find((ele) => ele.id === itemId);
+      // const currProduct = products.find((ele) => ele.id === itemId);
       // const stock = currProduct.stock;
       // const price = currProduct.price1;
+      
       const stock = 100;
 
       // event to add and sub products
