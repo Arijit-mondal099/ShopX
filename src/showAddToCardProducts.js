@@ -1,7 +1,7 @@
-import { removeProduct } from "./removeProduct";
-import products from "../productsApi/products.json";
-import { incrimentDecrement } from "./incrimentDecrement";
-import { showAllPriceSummary } from "./showAllPriceSummary";
+import { removeProduct } from "./removeProduct.js";
+import products from "../productsApi/products.json.js";
+import { incrimentDecrement } from "./incrimentDecrement.js";
+import { showAllPriceSummary } from "./showAllPriceSummary.js";
 
 const cardProductsContainer = document.querySelector(".cards");
 const productsCardContainer = document.querySelector(".productsCardContainer");
