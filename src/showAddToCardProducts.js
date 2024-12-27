@@ -1,5 +1,5 @@
 import { removeProduct } from "./removeProduct.js";
-import products from "../productsApi/products.json";
+// import products from "../productsApi/products.json";
 import { incrimentDecrement } from "./incrimentDecrement.js";
 import { showAllPriceSummary } from "./showAllPriceSummary.js";
 
@@ -52,8 +52,9 @@ export function showAddToCardProducts(cardProducts) {
 
       // find current product stock
       const currProduct = products.find((ele) => ele.id === itemId);
-      const stock = currProduct.stock;
-      const price = currProduct.price1;
+      // const stock = currProduct.stock;
+      // const price = currProduct.price1;
+      const stock = 100;
 
       // event to add and sub products
       productCardClone
