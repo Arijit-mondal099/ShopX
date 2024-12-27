@@ -31,6 +31,7 @@ export function showAddToCardProducts(cardProducts) {
       // ../public/products/mobile.png
       // console.log(currProductImg)
       const img = currProductImg.split(".com")[1];
+      console.log(img)
 
       // add unic id to all
       productCardClone
