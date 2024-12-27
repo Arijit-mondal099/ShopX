@@ -31,7 +31,7 @@ export function showAddToCardProducts(cardProducts) {
       // ../public/products/mobile.png --> /public/products/mobile.png
       // console.log(currProductImg)
       const img = currProductImg.split(".com")[1]; // /products/bag.png
-       console.log(img)
+      // console.log(img)
 
       // add unic id to all
       productCardClone
@@ -40,7 +40,7 @@ export function showAddToCardProducts(cardProducts) {
 
       // show all data
       productCardClone.querySelector(".tag").textContent = category;
-      productCardClone.querySelector(".productImg").src = "/public" + img;
+      productCardClone.querySelector(".productImg").src = img;
       productCardClone.querySelector(".productName").textContent = productName;
       productCardClone.querySelector(
         ".currMoney"
