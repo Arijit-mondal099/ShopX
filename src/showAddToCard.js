@@ -1,6 +1,6 @@
-import { getCardProductsDB } from "./getCardProducts";
-import { showAddToCardProducts } from "./showAddToCardProducts";
-import { displayTotalCardProducts } from "./updateCard";
+import { getCardProductsDB } from "./getCardProducts.js";
+import { showAddToCardProducts } from "./showAddToCardProducts.js";
+import { displayTotalCardProducts } from "./updateCard.js";
 
 // responsive hambarger---------------------------
 const crose = document.querySelector(".crose");
