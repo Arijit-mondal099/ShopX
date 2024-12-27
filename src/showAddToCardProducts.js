@@ -28,10 +28,10 @@ export function showAddToCardProducts(cardProducts) {
         true
       );
 
-      // ../public/products/mobile.png
+      // ../public/products/mobile.png --> /public/products/mobile.png
       // console.log(currProductImg)
-      const img = currProductImg.split(".com")[1];
-      console.log(img)
+      const img = currProductImg.split(".com")[1]; // /products/bag.png
+      // console.log(img)
 
       // add unic id to all
       productCardClone
@@ -40,7 +40,7 @@ export function showAddToCardProducts(cardProducts) {
 
       // show all data
       productCardClone.querySelector(".tag").textContent = category;
-      productCardClone.querySelector(".productImg").src = currProductImg;
+      productCardClone.querySelector(".productImg").src = "/public" + img;
       productCardClone.querySelector(".productName").textContent = productName;
       productCardClone.querySelector(
         ".currMoney"
