@@ -1,5 +1,5 @@
 import { removeProduct } from "./removeProduct.js";
-import products from "../productsApi/products.json.js";
+import products from "../productsApi/products.json";
 import { incrimentDecrement } from "./incrimentDecrement.js";
 import { showAllPriceSummary } from "./showAllPriceSummary.js";
 
