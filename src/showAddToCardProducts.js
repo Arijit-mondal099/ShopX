@@ -29,9 +29,7 @@ export function showAddToCardProducts(cardProducts) {
       );
 
       // ../public/products/mobile.png --> /public/products/mobile.png
-      // console.log(currProductImg)
-      const img = currProductImg.split(".com")[1]; // /products/bag.png
-      // console.log(img)
+      const img = currProductImg.split(".com")[1];
 
       // add unic id to all
       productCardClone
