@@ -1,7 +1,7 @@
 import { getCardProductsDB } from "./getCardProducts.js";
 import { showAddToCardProducts } from "./showAddToCardProducts.js";
 import { showAllPriceSummary } from "./showAllPriceSummary.js";
-import { showToast } from "./showToast";
+import { showToast } from "./showToast.js";
 
 export function removeProduct(id) {
   // get all product
