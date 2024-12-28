@@ -17,5 +17,9 @@ crose.addEventListener("click", (e) => {
 });
 
 // show cards
-const products = getCardProductsDB();
-showAddToCardProducts(products);
+try {
+  const products = getCardProductsDB();
+  showAddToCardProducts(products);
+} catch ( error ) {
+  console.log("Internal server error!");
+}
