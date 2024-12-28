@@ -16,15 +16,15 @@ crose.addEventListener("click", (e) => {
   hamSectionContainer.style.right = -150 + "%";
 });
 
-// show products----------------------------------
 try {
+  // show products----------------------------------
   fetch("../productsApi/products.json")
-  .then((response) => response.json())
-  .then((data) => showProductsCard(data))
-  .catch((error) => console.error("Error loading JSON:", error));
+    .then((response) => response.json())
+    .then((data) => showProductsCard(data))
+    .catch((error) => console.error("Error loading JSON:", error));
+
+  // display total card products--------------------
+  displayTotalCardProducts();
 } catch ( error ) {
   console.log("Internal server error!");
 }
-
-// display total card products--------------------
-displayTotalCardProducts();
