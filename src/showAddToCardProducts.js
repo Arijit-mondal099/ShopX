@@ -8,8 +8,10 @@ const cardProductsContainer = document.querySelector(".cards");
 const productsCardContainer = document.querySelector(".productsCardContainer");
 
 export function showAddToCardProducts(cardProducts) {
+  // clear all content from container and put fresh data on it 
   cardProductsContainer.innerHTML = "";
-  if (cardProducts.length > 0) {
+  
+  if ( cardProducts.length > 0 ) { // check for empty or not
     cardProducts.forEach((product) => {
       // destructer data from current product
       const {category, currMoney, currProductImg, currStock, itemId, productName, quantity, totalPrise} = product;
@@ -49,10 +51,5 @@ export function showAddToCardProducts(cardProducts) {
       // append card into container
       cardProductsContainer.appendChild(productCardClone);
     });
-
-
-
-
-    
   }
 }
