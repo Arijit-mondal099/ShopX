@@ -21,7 +21,7 @@ try {
   fetch("../productsApi/products.json")
     .then((response) => response.json())
     .then((data) => showProductsCard(data))
-    .catch((error) => console.error("Error loading JSON:", error));
+    .catch((error) => console.error("Error loading JSON!"));
 
   // display total card products--------------------
   displayTotalCardProducts();
